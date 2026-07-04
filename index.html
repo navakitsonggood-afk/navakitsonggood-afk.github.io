@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>99+ Problems:คณิตไม่ใช่ศัตรู แต่คำตอบไม่เคยเป็นมิตร</title>
+<title>99+ Problems - วิ่งเก็บเลข ล่าคำศัพท์</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -136,6 +136,16 @@
   }
   h1.title span{color:var(--mint-dark);}
 
+  p.tagline{
+    font-family:var(--font-body);
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(12px,2.2vw,14px);
+    color:var(--plum);
+    margin:0 0 14px;
+    line-height:1.5;
+  }
+
   p.subtitle{
     font-size:clamp(13px,2.4vw,15px);
     color:var(--choco-mid);
@@ -261,7 +271,7 @@
 
     <!-- HUD -->
     <div id="hud">
-      <div class="hud-pill" id="score-pill">₿ <span id="score-value">0</span></div>
+      <div class="hud-pill" id="score-pill">🍪 <span id="score-value">0</span></div>
       <div class="hud-pill" id="timer-pill">⏱ <span id="timer-value">3:00</span></div>
       <div class="hud-pill" id="lives-pill">
         <span class="heart">❤</span><span class="heart">❤</span><span class="heart">❤</span>
@@ -272,7 +282,8 @@
     <!-- Start screen -->
     <div class="overlay" id="start-screen">
       <div class="card">
-        <h1 class="title">99+ Problems:<span>คณิตไม่ใช่ศัตรู</span>แต่คำตอบไม่เคยเป็นมิตร</h1>
+        <h1 class="title"><span>99+</span> Problems</h1>
+        <p class="tagline">คณิตไม่ใช่ศัตรู แต่คำตอบไม่เคยเป็นมิตร</p>
         <p class="subtitle">วิ่งเก็บตัวเลขสะสมคะแนน แล้วตามล่าคำศัพท์คอมพิวเตอร์ให้ครบชุด<br>เพื่อปลดล็อกโจทย์คณิตศาสตร์สุดง่าย!</p>
         <div class="howto">
           <div>🖱️ <b>กระโดด:</b> กด Space / คลิก / แตะปุ่มกระโดด</div>
@@ -287,7 +298,7 @@
     <!-- Quiz overlay -->
     <div class="overlay" id="quiz-modal" hidden>
       <div class="card">
-        <div id="quiz-eyebrow">🎫โจทย์คณิตศาสตร์</div>
+        <div id="quiz-eyebrow">🎫 ออเดอร์ด่วนจากเตาอบ — โจทย์คณิตศาสตร์</div>
         <div id="quiz-question">2 + 2 = ?</div>
         <div id="quiz-choices"></div>
         <div id="quiz-feedback"></div>
@@ -311,7 +322,7 @@
 
 <script>
 /* =========================================================================================
-   COOKIE TECH RUNNER — เกมวิ่งเก็บเลขสุ่ม + คำศัพท์คอมพิวเตอร์ + โจทย์คณิตศาสตร์
+   99+ PROBLEMS — เกมวิ่งเก็บเลขสุ่ม + คำศัพท์คอมพิวเตอร์ + โจทย์คณิตศาสตร์
    โครงสร้างไฟล์นี้ตั้งใจให้แก้ไข "ฉาก" และ "ตัวละคร" ได้ง่าย
    ทุกจุดที่ควรแก้ จะมีคอมเมนต์คั่นด้วย ===== แบบนี้ ให้ Ctrl+F หาได้สะดวก
    ========================================================================================= */
